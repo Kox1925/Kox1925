@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Webfejlesztő & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Várady Gergely</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Kezdőlap</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Rólam</a></li>
+                    <li class="nav-item"><a href="#resume" class="nav-link">Önéletrajz</a></li>
+                    <li class="nav-item"><a href="#student-helper" class="nav-link">Student Helper</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">Vélemények</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Kapcsolat</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Fő tartalom - Bemutatkozás -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">Üdvözöllek a portfólió oldalamon</h1>
+                        <p class="hero-subtitle">Junior programozó</p>
+                        <a href="#about" class="btn btn-primary">Tudj meg többet</a>
+                    </div>
+                    <div class="hero-image">
+                        <!-- Ide rakd a képed -->
+                        <img src="Profilkep.jpg" alt="Profil kép" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rólam szekció -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Rólam</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Üdvözöllek! Várady Gergely vagyok , tanuló és a Student Helper didaktikai applikáció készítője. Bár a Student Helper az eddigi első és egyetlen komoly projektem , igyekszem elhelyezkedni a programozás területén és életre kelteni a programokat amiket kitalálok. </p>
+                        <p>Ott segítek ahol tudok , web fejlesztéssel és programozással kapcsolatosan bármikor meg lehet keresni.</p>
+                        <div class="skills">
+                            <h3>Készségek</h3>
+                            <div class="skill-bars">
+                                <div class="skill">
+                                    <p>Python</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level html-css">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>JavaScript</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level javascript">60%</div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <p>UI/UX Design</p>
+                                    <div class="skill-bar">
+                                        <div class="skill-level design">80%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Önéletrajz szekció -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <h2 class="section-title">Önéletrajz</h2>
+                <div class="resume-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025 - Jelenleg</div>
+                        <div class="timeline-content">
+                            <h3>Szabadúszó</h3>
+                            <h4>Várady Gergely Studio</h4>
+                            <p>Középiskola elvégzése után szabadúszóként tevékenykedek</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - 2025</div>
+                        <div class="timeline-content">
+                            <h3>Középiskolás tanuló</h3>
+                            <h4>Spojená škola, Komárňanská 28, Nové Zámky</h4>
+                            <p>Ekkor kezdtem el 2021-ben C,Python,JavaScript nyelveket tanulni</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2012 - 2021</div>
+                        <div class="timeline-content">
+                            <h3>Alapiskola</h3>
+                            <h4>Alapiskola Nyárasd</h4>
+                            <p>Már ekkor is foglalkoztam MicroBitekkel és elkezdtem Unreal Engine-t tanulni.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Helper szekció -->
+        <section id="student-helper" class="student-helper-section">
+            <div class="container">
+                <h2 class="section-title">Student Helper</h2>
+                <div class="app-presentation">
+                    <div class="app-image">
+                        <img src="BG.jpg" alt="Student Helper App">
+                    </div>
+                    <div class="app-details">
+                        <h3>Az alkalmazás, ami segít a tanulmányaidban</h3>
+                        <p>A Student Helper egy asztali alkalmazás ami egylőre csak a magyar érettségire , de későbbi frissítések után az összes többi érettségire is segít felkészülni. Funkciói a következők:</p>
+                        <ul class="app-features">
+                            <li><i class="fas fa-check"></i> 30 kidolgozott magyar érettségi tétel</li>
+                            <li><i class="fas fa-check"></i> 30 teszt a tudásunk tesztelésére</li>
+                            <li><i class="fas fa-check"></i> Saját kvízkészítő</li>
+                            <li><i class="fas fa-check"></i> Kérdés-válasz alapú memorizálás</li>
+                            <li><i class="fas fa-check"></i> Nagy teszt randomizált érettségi kérdésekkel</li>
+                        </ul>
+                        <a href="#" class="btn btn-download" id="download-btn">
+                            <i class="fas fa-download"></i> Ingyenes letöltés
+                        </a>
+                        <div class="download-info">
+                            <p>Verzió: 1.1.1 | Méret: 27MB </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vélemények szekció -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <h2 class="section-title">Vélemények</h2>
+                <div class="reviews-container">
+                    <div class="review-form">
+                        <h3>Írd meg a véleményed</h3>
+                        <form id="reviewForm">
+                            <div class="form-group">
+                                <label for="reviewer-name">Név:</label>
+                                <input type="text" id="reviewer-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Vélemény:</label>
+                                <textarea id="review-text" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Értékelés:</label>
+                                <div class="rating">
+                                    <input type="radio" id="star5" name="rating" value="5">
+                                    <label for="star5" title="5 csillag">☆</label>
+                                    <input type="radio" id="star4" name="rating" value="4">
+                                    <label for="star4" title="4 csillag">☆</label>
+                                    <input type="radio" id="star3" name="rating" value="3">
+                                    <label for="star3" title="3 csillag">☆</label>
+                                    <input type="radio" id="star2" name="rating" value="2">
+                                    <label for="star2" title="2 csillag">☆</label>
+                                    <input type="radio" id="star1" name="rating" value="1">
+                                    <label for="star1" title="1 csillag">☆</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Küldés</button>
+                        </form>
+                    </div>
+                    <div class="reviews-list">
+                        <h3>Korábbi vélemények</h3>
+                        <div id="reviewsDisplay">
+                            <!-- Ide kerülnek a vélemények JavaScript segítségével -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kapcsolat szekció -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Kapcsolat</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Elérhetőségek</h3>
+                        <p><i class="fas fa-envelope"></i> varady.gergi@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +421 918 532 813</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Dunaszerdahely,Szlovákia</p>
+                        <div class="social-links">
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Küldj üzenetet</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="contact-name" placeholder="Név" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contact-email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contact-message" rows="5" placeholder="Üzenet" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Küldés</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Várady Gergely</span>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Kezdőlap</a></li>
+                        <li><a href="#about">Rólam</a></li>
+                        <li><a href="#resume">Önéletrajz</a></li>
+                        <li><a href="#student-helper">Student Helper</a></li>
+                        <li><a href="#reviews">Vélemények</a></li>
+                        <li><a href="#contact">Kapcsolat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> My Portfolio. Minden jog fenntartva.</p>
+                <p id="datetime"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
